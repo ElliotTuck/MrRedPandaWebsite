@@ -9,3 +9,6 @@ body {
 .center {
 	text-align: center;
 }
+.btn-md {
+	font-size: medium;
+}
