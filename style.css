@@ -5,10 +5,15 @@ body {
 .resume {
 	background: white;
 	color: purple;
+	padding: 10px;
 }
 .center {
 	text-align: center;
+	padding-bottom: 10px;
 }
 .btn-md {
 	font-size: medium;
+}
+h1 {
+	margin: 0px;
 }
