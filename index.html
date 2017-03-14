@@ -3,15 +3,38 @@
 	<head>
 		<title>Mr. Red Panda's Website</title>
 		<link href="style.css" rel="stylesheet">
+		<script>
+		function getImage(v) {
+			var path;
+			if (v < 1/7) {
+				path = "switch_images/switch1.jpeg";
+			} else if (v < 2/7) {
+				path = "switch_images/switch2.jpeg";
+			} else if (v < 3/7) {
+				path = "switch_images/switch3.jpeg";
+			} else if (v < 4/7) {
+				path = "switch_images/switch4.jpeg";
+			} else if (v < 5/7) {
+				path = "switch_images/switch5.jpeg";
+			} else if (v < 6/7) {
+				path = "switch_images/switch6.jpeg";
+			} else {
+				path = "switch_images/switch7.JPG"
+			}
+			document.getElementById("switch").src = path;
+		}
+		</script>
 	</head>
 	<body>
-		<h1>
-		Mr. Red Panda
-		</h1>
-		<img src="mrRedPanda.JPG" width=250px>
-		<p>
-		</p>
-		<button type="button">I'm a button!</button>
+		<div style="text-align: center;">
+			<h1>
+			Mr. Red Panda
+			</h1>
+			<img id="switch" src="mrRedPanda.JPG" height=500px style="border-radius: 5%">
+			<p>
+			</p>
+			<button type="button" onclick="getImage(Math.random())">See another cute picture!</button>
+		</div>
 		<div class="resume">
 			<h1>
 			Resume
@@ -30,6 +53,10 @@
 			Gymnastics
 			</p>
 			<img src="redpanda.gif" width=250px>
+			<p>
+			Pumpkin Slaying
+			</p>
+			<img src="redpandapumpkin.jpg" width=250px>
 		</div>
 		<p>
 		Mr. Red Panda should be hired for every job.
