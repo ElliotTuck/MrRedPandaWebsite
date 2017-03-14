@@ -1,4 +1,4 @@
 # MrRedPandaWebsite
 
-This is readme for MrRedPandaWebsite.
+An awesome website about an awesome friend!
 
