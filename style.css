@@ -1,19 +1,50 @@
+/* default element style overriding */
+h1 {
+	margin: 0px 0px 10px 0px;
+}
+
+/* major page elements/containers */
 body {
-	background: black;
-	color: cyan;
+	background: lavender;
+	color: dimgray;
+	margin: 0px;
 }
 .resume {
 	background: white;
 	color: purple;
-	padding: 10px;
 }
 .center {
 	text-align: center;
-	padding-bottom: 10px;
 }
+.container {
+	padding: 10px;
+}
+
+/* button styling */
 .btn-md {
 	font-size: medium;
+	border-radius: 10px;
+	border: none;
 }
-h1 {
-	margin: 0px;
+.btn-md:hover {
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.24);
+    transition-duration: 0.2s;
+    cursor: pointer;
+	outline: none;
+}
+.btn-md:focus {
+	outline: none;
+}
+.btn-md:active {
+	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.24), 0px 0px 2px 2px rgba(0,0,0,0.44) inset;
+}
+
+/* specific elements */
+#switch_btn {
+	margin-top: 7px;
+}
+
+/* hacks */
+.vspace {
+	padding: 5px;
 }

@@ -1,3 +1,4 @@
+<!-- main page -->
 <!doctype html>
 <html>
 	<head>
@@ -26,16 +27,18 @@
 		</script>
 	</head>
 	<body>
-		<div class="center">
+		<!-- top part of the page -->
+		<div class="container center">
 			<h1>
 			Mr. Red Panda
 			</h1>
-			<img id="switch" src="mrRedPanda.JPG" height=500px style="border-radius: 5%">
-			<p>
-			</p>
-			<button type="button" onclick="getImage(Math.random())" class="btn-md">See another cute picture!</button>
+			<img id="switch" src="mrRedPanda.JPG" height=500px style="border-radius: 30px">
+			<br>
+			<button id="switch_btn" type="button" onclick="getImage(Math.random())" class="btn-md">See another cute picture!</button>
 		</div>
-		<div class="resume">
+
+		<!-- resume section of the page -->
+		<div class="container resume">
 			<h1>
 			Resume
 			</h1>
@@ -58,8 +61,12 @@
 			</p>
 			<img src="redpandapumpkin.jpg" width=250px>
 		</div>
-		<p>
-		Mr. Red Panda should be hired for every job.
-		</p>
+
+		<!-- bottom portion of the page -->
+		<div class="container">
+			<p>
+			Mr. Red Panda should be hired for every job.
+			</p>
+		</div>
 	</body>
 </html>
