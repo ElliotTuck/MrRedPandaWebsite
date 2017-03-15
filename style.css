@@ -6,6 +6,9 @@ h1 {
 /* major page elements/containers */
 body {
 	background: lavender;
+	background-image: url("lavender.png");
+	background-position: 1% 0%;
+	background-repeat: no-repeat;
 	color: dimgray;
 	margin: 0px;
 }
@@ -37,6 +40,14 @@ body {
 }
 .btn-md:active {
 	box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.24), 0px 0px 2px 2px rgba(0,0,0,0.44) inset;
+}
+
+/* image styles */
+.img-round-sm {
+	border-radius: 5px;
+}
+.img-round-lg {
+	border-radius: 30px;
 }
 
 /* specific elements */
