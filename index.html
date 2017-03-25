@@ -3,47 +3,12 @@
 <html>
 	<head>
 		<title>Mr. Red Panda's Website</title>
+
+		<!-- CSS -->
 		<link href="style.css" rel="stylesheet">
-		<script>
-		function getImage() {
-			var curPath = document.getElementById("switch").getAttribute("src");
-			if (curPath === "switch_images/switch7.JPG") {
-				path = "switch_images/switch1.jpeg";
-			} else if (curPath === "switch_images/switch1.jpeg") {
-				path = "switch_images/switch2.jpeg";
-			} else if (curPath === "switch_images/switch2.jpeg") {
-				path = "switch_images/switch3.jpeg";
-			} else if (curPath === "switch_images/switch3.jpeg") {
-				path = "switch_images/switch4.jpeg";
-			} else if (curPath === "switch_images/switch4.jpeg") {
-				path = "switch_images/switch5.jpeg";
-			} else if (curPath === "switch_images/switch5.jpeg") {
-				path = "switch_images/switch6.jpeg";
-			} else {
-				path = "switch_images/switch7.JPG"
-			}
-			document.getElementById("switch").src = path;
-		}
-		function getImageRev() {
-			var curPath = document.getElementById("switch").getAttribute("src");
-			if (curPath === "switch_images/switch2.jpeg") {
-				path = "switch_images/switch1.jpeg";
-			} else if (curPath === "switch_images/switch3.jpeg") {
-				path = "switch_images/switch2.jpeg";
-			} else if (curPath === "switch_images/switch4.jpeg") {
-				path = "switch_images/switch3.jpeg";
-			} else if (curPath === "switch_images/switch5.jpeg") {
-				path = "switch_images/switch4.jpeg";
-			} else if (curPath === "switch_images/switch6.jpeg") {
-				path = "switch_images/switch5.jpeg";
-			} else if (curPath === "switch_images/switch7.JPG") {
-				path = "switch_images/switch6.jpeg";
-			} else {
-				path = "switch_images/switch7.JPG"
-			}
-			document.getElementById("switch").src = path;
-		}
-		</script>
+
+		<!-- JavaScript -->
+		<script src="main.js"></script>
 	</head>
 	<body>
 		<!-- top part of the page -->
@@ -59,26 +24,13 @@
 
 		<!-- resume section of the page -->
 		<div class="container resume">
-			<h1>
-			Resume
-			</h1>
-			<h2>
-			Education
-			</h2>
-			<p>
-			Stony Brook University
-			B.S. in Animal Studies
-			</p>
-			<h2>
-			Skills
-			</h2>
-			<p>
-			Gymnastics
-			</p>
+			<h1>Resume</h1>
+			<h2>Education</h2>
+			<p>Stony Brook University B.S. in Animal Studies</p>
+			<h2>Skills</h2>
+			<p>Gymnastics</p>
 			<img class="img-round-sm" src="redpanda.gif" width=250px>
-			<p>
-			Pumpkin Slaying
-			</p>
+			<p>Pumpkin Slaying</p>
 			<img class="img-round-sm" src="redpandapumpkin.jpg" width=250px>
 		</div>
 
@@ -88,5 +40,8 @@
 			Mr. Red Panda should be hired for every job.
 			</p>
 		</div>
+
+		<!-- leave at bottom so page loads faster (jQuery) -->
+		<script href="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	</body>
 </html>
